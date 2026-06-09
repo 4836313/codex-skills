@@ -1,0 +1,6 @@
+interface:
+  display_name: "Lab Report Polisher"
+  short_description: "整理实验报告代码、输出和排版"
+  default_prompt: "Use $lab-report-polisher to insert programming-question code, outputs, and analysis into my lab report template."
+policy:
+  allow_implicit_invocation: true
