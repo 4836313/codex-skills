@@ -12,7 +12,7 @@ After pushing this repository to GitHub, another Codex environment can install t
 
 ```bash
 python /path/to/skill-installer/scripts/install-skill-from-github.py \
-  --repo <your-github-username>/codex-skills \
+  --repo 4836313/codex-skills \
   --path lab-report-polisher
 ```
 
