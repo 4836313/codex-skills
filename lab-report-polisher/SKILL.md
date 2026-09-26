@@ -14,6 +14,7 @@ Use this skill to complete only the programming-report portions of a Chinese lab
 1. Identify the source template, programming questions, data files, and expected deliverable.
 2. Keep the original `.docx` untouched. Save edits to a clearly named copy.
 3. Insert each question's report content directly below its own prompt: `关键代码` -> `输出结果` -> `结果分析`.
+   These labels should be standalone bold heading paragraphs, flush left, each occupying its own line.
 4. Do not fill unrelated sections unless the user asks: concept questions, data analysis blanks, experiment conclusion, teacher comments, grade, signature, and remarks.
 5. Use the Documents skill for DOCX work. Render the finished DOCX to PNGs and inspect the pages. If rendering fails because `soffice` is unavailable, say so.
 6. Run structural checks before delivery: DOCX archive test, required text present, original template unchanged, teacher review framework present.
@@ -35,6 +36,7 @@ Use this skill to complete only the programming-report portions of a Chinese lab
 - Body analysis paragraphs should usually use first-line indent of about 2 Chinese characters.
 - Keep result analysis in academic prose, not scattered bullet points, unless the report format asks for bullets.
 - Figure captions should be centered and smaller than body text.
+- In programming sections, format `关键代码：`, `输出结果：`, and `结果分析：` the same way: standalone, bold, flush-left labels. Put the actual code, output text, or analysis body on following paragraphs; body paragraphs keep first-line indent and should not start with the label text.
 
 ## Code Blocks
 
@@ -57,4 +59,3 @@ Use a framed code block for report snippets:
 ## Implementation Notes
 
 For detailed DOCX insertion patterns, read `references/docx-patterns.md` when working on a report template.
-
