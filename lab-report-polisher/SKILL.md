@@ -61,9 +61,15 @@ Use a framed code block for report snippets:
 - Write requested report sections as a technical account of the achieved implementation and verified behavior. Where relevant, connect theoretical expectation, design and parameters, core implementation, observed results, and mechanism.
 - Give each figure, metric, and comparison a clear purpose in the argument. State supported findings directly; do not add a generic disclaimer or negative afterthought to the end of an otherwise complete analysis.
 - Compare methods and parameter settings against the stated evaluation criteria. Explain observed tradeoffs and suitable use cases when the data and design support them; report unfavorable results accurately instead of renaming them as successes.
-- Describe a setup as a controlled baseline only when the experiment actually held relevant variables constant. Do not invent tests, metrics, citations, causal explanations, or conditions that were not present.
+- Do not invent tests, metrics, citations, causal explanations, or conditions that were not present.
 - Mention limitations, missing evidence, and boundary conditions when they materially affect interpretation or reproducibility. State them specifically and at the relevant point, without stock self-weakening phrases or speculative criticism.
 - If a conclusion section is requested, summarize what was implemented and verified and the scope supported by the evidence. Do not append unsupported promises or ritual caveats.
+
+## Experimental Conditions And Process
+
+- In descriptions of steps, preprocessing, parameters, and data flow, state what was actually done and its purpose. Avoid appending lists of unused alternatives to an otherwise complete step, such as `，不进行…` or `，未采用…`, when they add nothing needed to understand or reproduce it.
+- If an omitted operation was an intentional control, explain the actual design objective and settings, such as evaluating raw output or preserving measurement units. Call the setup a controlled baseline only when the experiment truly held relevant variables constant; do not recast missing work or resources as a design choice.
+- Before delivery, review sentence-final negation-plus-action clauses. Delete redundant tails; when an exclusion defines a key comparison condition, rewrite it as a complete statement of the condition and its purpose. Keep negative facts that materially affect reproducibility or interpretation.
 
 ## Implementation Notes
 
